@@ -1,875 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <meta content="Arthur Correia Nunes — especialista em ERP TOTVS RM, SQL Server, Python e automação de processos." name="description"/>
-  <meta content="Arthur Correia Nunes, TOTVS RM, ERP, SQL Server, Python, Playwright, automação" name="keywords"/>
-  <meta content="#090b0a" name="theme-color"/>
-  <meta content="website" property="og:type"/>
-  <meta content="Arthur Correia Nunes | Sistemas &amp; Automação" property="og:title"/>
-  <meta content="Soluções ERP, dados e automação que simplificam o trabalho." property="og:description"/>
-  <meta content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
-  <meta content="summary_large_image" name="twitter:card"/>
-  <meta content="Arthur Correia Nunes | Sistemas &amp; Automação" name="twitter:title"/>
-  <link href="favicon.ico" rel="icon"/>
-  <link href="https://images.unsplash.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-  <link href="style.css" rel="stylesheet"/>
-  <title>
-   Arthur Correia Nunes | Sistemas &amp; Automação
-  </title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arthur Correia Nunes, Analista de Sistemas especializado em ERP TOTVS RM, SQL Server e automação de processos com Python e Playwright.">
+  <meta name="keywords" content="Analista de Sistemas, TOTVS RM, SQL Server, Python, Playwright, automação, ERP">
+  <meta name="author" content="Arthur Correia Nunes">
+  <meta name="theme-color" content="#080b0d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Arthur Correia Nunes | Analista de Sistemas">
+  <meta property="og:description" content="Soluções em ERP, dados e automação para processos corporativos mais eficientes.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arthur Correia Nunes | Analista de Sistemas">
+  <meta name="twitter:description" content="ERP, dados e automação de processos.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Arthur Correia Nunes | Analista de Sistemas</title>
   <script type="application/ld+json">
-   {"@context":"https://schema.org","@type":"Person","name":"Arthur Correia Nunes","jobTitle":"Especialista em ERP e Automação","knowsAbout":["TOTVS RM","SQL Server","Python","Playwright","ERP"],"sameAs":["https://www.linkedin.com/in/arthur-correia-nunes-053696191/","https://tuart1.github.io/PORTFOLIO/"]}
+    {"@context":"https://schema.org","@type":"Person","name":"Arthur Correia Nunes","jobTitle":"Analista de Sistemas","url":"https://tuart1.github.io/PORTFOLIO/","sameAs":["https://www.linkedin.com/in/arthur-correia-nunes-053696191/","https://github.com/tuart1"],"knowsAbout":["TOTVS RM","SQL Server","Python","Playwright","Automação de Processos","Integrações de Sistemas"]}
   </script>
- </head>
- <body>
-  <a class="skip-link" href="#conteudo">
-   Pular para o conteúdo
-  </a>
-  <div aria-hidden="true" class="loader">
-   <b>
-    AC
-   </b>
-  </div>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="loader" aria-hidden="true"><span>AC</span></div>
+
+  <!-- Navegação principal -->
   <header class="site-header">
-   <nav aria-label="Navegação principal" class="container nav">
-    <a class="brand" href="#inicio">
-     Arthur
-     <span>
-      .
-     </span>
-    </a>
-    <button aria-controls="menu" aria-expanded="false" class="menu-button">
-     Menu
-     <span aria-hidden="true">
-      +
-     </span>
-    </button>
-    <div class="menu" id="menu">
-     <a href="#inicio">
-      Home
-     </a>
-     <a href="#sobre">
-      Sobre
-     </a>
-     <a href="#experiencia">
-      Experiência
-     </a>
-     <a href="#projetos">
-      Projetos
-     </a>
-     <a href="#skills">
-      Skills
-     </a>
-     <a href="#contato">
-      Contato
-     </a>
-     <button aria-label="Ativar tema claro" class="theme-button" title="Alternar tema">
-      <span aria-hidden="true">
-       ◐
-      </span>
-     </button>
-    </div>
-   </nav>
+    <nav class="container nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Início">Arthur<span>.</span></a>
+      <button class="menu-button" aria-expanded="false" aria-controls="menu">Menu <span aria-hidden="true">+</span></button>
+      <div class="menu" id="menu">
+        <a href="#atuacao">Atuação</a><a href="#experiencia">Experiência</a><a href="#projetos">Projetos</a><a href="#stack">Stack</a><a href="#contato">Contato</a>
+        <button class="theme-button" aria-label="Ativar tema claro" title="Alternar tema"><span aria-hidden="true">◐</span></button>
+      </div>
+    </nav>
   </header>
+
   <main id="conteudo">
-   <section aria-labelledby="hero-title" class="hero" id="inicio">
-    <div aria-hidden="true" class="hero-image">
-    </div>
-    <div aria-hidden="true" class="hero-orb">
-    </div>
-    <div aria-hidden="true" class="hero-grain">
-    </div>
-    <div class="container hero-content">
-     <p class="eyebrow">
-      Olá, eu sou Arthur
-      <span class="availability">
-       <i>
-       </i>
-       disponível para projetos
-      </span>
-     </p>
-     <h1 id="hero-title">
-      Arthur
-      <br/>
-      <em>
-       Correia Nunes
-      </em>
-     </h1>
-     <p class="hero-role">
-      <span aria-hidden="true">
-       $
-      </span>
-      <span id="typed">
-       Analista de Sistemas
-      </span>
-      <span aria-hidden="true" class="caret">
-       _
-      </span>
-     </p>
-     <p class="hero-copy">
-      Transformo processos complexos em sistemas, dados e automações que devolvem clareza e escala aos negócios.
-     </p>
-     <div class="actions">
-      <a class="button primary" download="" href="assets/pdf/curriculo-arthur-correia-nunes.pdf">
-       Baixar currículo
-       <span aria-hidden="true">
-        ↓
-       </span>
-      </a>
-      <a class="button secondary" href="#projetos">
-       Conheça meu trabalho
-       <span aria-hidden="true">
-        →
-       </span>
-      </a>
-     </div>
-     <div class="socials">
-      <a href="https://www.linkedin.com/in/arthur-correia-nunes-053696191/" rel="noopener noreferrer" target="_blank">
-       LinkedIn
-       <span aria-hidden="true">
-        ↗
-       </span>
-      </a>
-      <a href="https://tuart1.github.io/PORTFOLIO/" rel="noopener noreferrer" target="_blank">
-       Portfólio
-       <span aria-hidden="true">
-        ↗
-       </span>
-      </a>
-      <span>
-       Rio de Janeiro, BR
-      </span>
-     </div>
-    </div>
-    <a class="scroll-hint" href="#sobre">
-     <span>
-     </span>
-     role para explorar
-    </a>
-   </section>
-   <section class="section about" id="sobre">
-    <div class="container two-columns">
-     <figure class="portrait reveal">
-      <img alt="Equipe em reunião de trabalho" decoding="async" height="1125" loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=900&amp;q=82" width="900"/>
-      <figcaption>
-       <strong>
-        ERP
-        <br/>
-        +
-       </strong>
-       <span>
-        automação
-        <br/>
-        com propósito
-       </span>
-      </figcaption>
-     </figure>
-     <div class="copy">
-      <p class="eyebrow reveal">
-       01 / sobre mim
-      </p>
-      <h2 class="reveal">
-       Tecnologia que
-       <br/>
-       <em>
-        move negócios.
-       </em>
-      </h2>
-      <p class="reveal">
-       Atuo na ponte entre pessoas, processos e tecnologia. Minha experiência une implantação de ERP, suporte especializado e automação para tornar operações de RH mais eficientes, confiáveis e humanas.
-      </p>
-      <p class="reveal">
-       Do TOTVS RM e RM Labore ao SQL Server, Python e Playwright, trabalho com uma visão prática: identificar gargalos, construir soluções sustentáveis e gerar impacto mensurável.
-      </p>
-      <ul aria-label="Especialidades" class="tags reveal">
-       <li>
-        Implantação ERP
-       </li>
-       <li>
-        Folha &amp; eSocial
-       </li>
-       <li>
-        Integrações
-       </li>
-       <li>
-        Banco de Dados
-       </li>
-       <li>
-        Portal Meu RH
-       </li>
-       <li>
-        Automação
-       </li>
-      </ul>
-     </div>
-    </div>
-   </section>
-   <section aria-label="Resultados" class="stats">
-    <div class="container stats-grid">
-     <div>
-      <strong data-count="3" data-suffix="+">
-       3+
-      </strong>
-      <span>
-       anos de experiência
-      </span>
-     </div>
-     <div>
-      <strong data-count="20" data-suffix="+">
-       20+
-      </strong>
-      <span>
-       projetos entregues
-      </span>
-     </div>
-     <div>
-      <strong data-count="100" data-suffix="+">
-       100+
-      </strong>
-      <span>
-       automações criadas
-      </span>
-     </div>
-     <div>
-      <strong data-count="1000" data-suffix="+">
-       1000+
-      </strong>
-      <span>
-       consultas SQL
-      </span>
-     </div>
-     <div>
-      <strong data-count="100" data-suffix="%">
-       100%
-      </strong>
-      <span>
-       comprometimento
-      </span>
-     </div>
-    </div>
-   </section>
-   <section class="section" id="experiencia">
-    <div class="container">
-     <p class="eyebrow reveal">
-      02 / trajetória
-     </p>
-     <h2 class="reveal">
-      Evolução guiada
-      <br/>
-      por
-      <em>
-       curiosidade.
-      </em>
-     </h2>
-     <ol class="timeline">
-      <li class="reveal">
-       <span>
-        01
-       </span>
-       <div>
-        <h3>
-         Estagiário de TI
-        </h3>
-        <p>
-         Fundamentos de infraestrutura, suporte e atendimento ao usuário.
-        </p>
-       </div>
-      </li>
-      <li class="reveal">
-       <span>
-        02
-       </span>
-       <div>
-        <h3>
-         Assistente de TI
-        </h3>
-        <p>
-         Rotinas operacionais, análise de demandas e sustentação de sistemas.
-        </p>
-       </div>
-      </li>
-      <li class="reveal">
-       <span>
-        03
-       </span>
-       <div>
-        <h3>
-         Assistente de TI II
-        </h3>
-        <p>
-         Aprofundamento em processos de RH, dados e soluções corporativas.
-        </p>
-       </div>
-      </li>
-      <li class="goal reveal">
-       <span>
-        04
-       </span>
-       <div>
-        <h3>
-         Analista de Sistemas
-         <small>
-          objetivo
-         </small>
-        </h3>
-        <p>
-         Projetar soluções integradas que ampliem o potencial das organizações.
-        </p>
-       </div>
-      </li>
-     </ol>
-    </div>
-   </section>
-   <section class="section projects" id="projetos">
-    <div class="container">
-     <div class="heading">
-      <div>
-       <p class="eyebrow reveal">
-        03 / projetos selecionados
-       </p>
-       <h2 class="reveal">
-        Soluções em
-        <br/>
-        <em>
-         movimento.
-        </em>
-       </h2>
+    <!-- Hero: proposta de valor -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Arthur Correia Nunes <span class="availability"><i></i> disponível para oportunidades</span></p>
+        <h1 id="hero-title">Analista<br>de <em>Sistemas.</em></h1>
+        <p class="hero-lead">Especialista em ERP TOTVS RM, SQL Server e Automação de Processos.</p>
+        <p class="hero-copy">Desenvolvo soluções que reduzem trabalho manual, integram sistemas e tornam processos corporativos mais rápidos, seguros e inteligentes.</p>
+        <div class="actions" aria-label="Links principais">
+          <a class="button primary" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="https://github.com/tuart1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="https://www.linkedin.com/in/arthur-correia-nunes-053696191/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="assets/pdf/curriculo-arthur-correia-nunes.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-foot"><span>ERP / DADOS / AUTOMAÇÃO</span><a href="#atuacao">role para explorar <b aria-hidden="true">↓</b></a></div>
       </div>
-      <p class="reveal">
-       Cada projeto começa entendendo o processo — e termina com mais tempo para o que importa.
-      </p>
-     </div>
-     <div class="project-grid">
-      <article class="project reveal">
-       <div class="project-media">
-        <img alt="Código de automação" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="900"/>
-        <b>
-         01
-        </b>
-       </div>
-       <div class="project-content">
-        <p>
-         Python · Playwright · Web Scraping
-        </p>
-        <h3>
-         Automação de Rubricas eSocial
-        </h3>
-        <div>
-         <span>
-          Redução expressiva de horas de trabalho manual na gestão de rubricas.
-         </span>
-         <a aria-label="Conversar sobre automação de rubricas eSocial" href="#contato">
-          ↗
-         </a>
+    </section>
+
+    <!-- Áreas de atuação -->
+    <section class="section capabilities" id="atuacao" aria-labelledby="capabilities-title">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow">01 / o que eu faço</p><h2 id="capabilities-title">Tecnologia aplicada<br>ao <em>resultado.</em></h2><p>Da operação diária à decisão estratégica, transformo necessidades de negócio em soluções práticas e sustentáveis.</p></div>
+        <div class="capability-grid">
+          <article class="capability reveal"><span>01</span><h3>ERP</h3><ul><li>Implantação</li><li>Parametrização</li><li>RM Labore</li><li>Meu RH</li><li>eSocial</li></ul></article>
+          <article class="capability reveal"><span>02</span><h3>Banco de Dados</h3><ul><li>SQL Server</li><li>Views</li><li>Procedures</li><li>Auditorias</li><li>Performance</li></ul></article>
+          <article class="capability reveal"><span>03</span><h3>Automação</h3><ul><li>Python</li><li>Playwright</li><li>Web Scraping</li><li>PowerShell</li><li>Integrações</li></ul></article>
+          <article class="capability reveal"><span>04</span><h3>Desenvolvimento</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React Native</li><li>Git</li></ul></article>
         </div>
-       </div>
-      </article>
-      <article class="project reveal">
-       <div class="project-media">
-        <img alt="Colaboração entre profissionais" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="900"/>
-        <b>
-         02
-        </b>
-       </div>
-       <div class="project-content">
-        <p>
-         TOTVS RM · Portal · RH
-        </p>
-        <h3>
-         Implantação Portal Meu RH
-        </h3>
-        <div>
-         <span>
-          Uma experiência digital simples e autônoma para colaboradores.
-         </span>
-         <a aria-label="Conversar sobre Portal Meu RH" href="#contato">
-          ↗
-         </a>
-        </div>
-       </div>
-      </article>
-      <article class="project reveal">
-       <div class="project-media">
-        <img alt="Mesa de trabalho com planejamento" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="900"/>
-        <b>
-         03
-        </b>
-       </div>
-       <div class="project-content">
-        <p>
-         Parametrização · Folha · Rubricas
-        </p>
-        <h3>
-         Reimplantação TOTVS RM
-        </h3>
-        <div>
-         <span>
-          Reestruturação orientada à segurança, consistência e aderência.
-         </span>
-         <a aria-label="Conversar sobre reimplantação TOTVS RM" href="#contato">
-          ↗
-         </a>
-        </div>
-       </div>
-      </article>
-      <article class="project reveal">
-       <div class="project-media">
-        <img alt="Editor de código" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="900"/>
-        <b>
-         04
-        </b>
-       </div>
-       <div class="project-content">
-        <p>
-         TXT · SISPAG · Integração
-        </p>
-        <h3>
-         Integração RM × Protheus
-        </h3>
-        <div>
-         <span>
-          Sistemas conversando com segurança para uma operação sem silos.
-         </span>
-         <a aria-label="Conversar sobre integração RM e Protheus" href="#contato">
-          ↗
-         </a>
-        </div>
-       </div>
-      </article>
-      <article class="project reveal">
-       <div class="project-media">
-        <img alt="Visualização de dados" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="900"/>
-        <b>
-         05
-        </b>
-       </div>
-       <div class="project-content">
-        <p>
-         SQL Server · Views · Auditorias
-        </p>
-        <h3>
-         Consultas SQL Estratégicas
-        </h3>
-        <div>
-         <span>
-          Dados confiáveis para auditoria, operação e decisões mais rápidas.
-         </span>
-         <a aria-label="Conversar sobre consultas SQL" href="#contato">
-          ↗
-         </a>
-        </div>
-       </div>
-      </article>
-      <article class="project reveal">
-       <div class="project-media">
-        <img alt="Aplicativo em smartphone" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="900"/>
-        <b>
-         06
-        </b>
-       </div>
-       <div class="project-content">
-        <p>
-         Expo · JavaScript · Mobile
-        </p>
-        <h3>
-         Aplicativo React Native
-        </h3>
-        <div>
-         <span>
-          Produto mobile para levar processos essenciais à palma da mão.
-         </span>
-         <a aria-label="Conversar sobre aplicativo React Native" href="#contato">
-          ↗
-         </a>
-        </div>
-       </div>
-      </article>
-     </div>
-    </div>
-   </section>
-   <section class="section skills" id="skills">
-    <div class="container two-columns">
-     <div>
-      <p class="eyebrow reveal">
-       04 / repertório técnico
-      </p>
-      <h2 class="reveal">
-       Profundidade onde
-       <br/>
-       ela
-       <em>
-        importa.
-       </em>
-      </h2>
-      <dl class="skill-list reveal">
-       <div>
-        <dt>
-         TOTVS RM
-         <b>
-          95%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="95">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         SQL Server
-         <b>
-          92%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="92">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         Python
-         <b>
-          90%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="90">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         Playwright
-         <b>
-          88%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="88">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         Excel
-         <b>
-          90%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="90">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         Git
-         <b>
-          82%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="82">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         JavaScript
-         <b>
-          85%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="85">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         HTML &amp; CSS
-         <b>
-          90%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="90">
-         </i>
-        </dd>
-       </div>
-       <div>
-        <dt>
-         React Native
-         <b>
-          75%
-         </b>
-        </dt>
-        <dd>
-         <i data-width="75">
-         </i>
-        </dd>
-       </div>
-      </dl>
-     </div>
-     <aside class="technology reveal">
-      <p>
-       ferramentas que fazem parte do meu dia
-      </p>
-      <ul>
-       <li>
-        Py
-        <span>
-         Python
-        </span>
-       </li>
-       <li>
-        JS
-        <span>
-         JavaScript
-        </span>
-       </li>
-       <li>
-        H5
-        <span>
-         HTML
-        </span>
-       </li>
-       <li>
-        CSS
-        <span>
-         CSS
-        </span>
-       </li>
-       <li>
-        Git
-        <span>
-         Git
-        </span>
-       </li>
-       <li>
-        GH
-        <span>
-         GitHub
-        </span>
-       </li>
-       <li>
-        SQL
-        <span>
-         SQL Server
-        </span>
-       </li>
-       <li>
-        RN
-        <span>
-         React Native
-        </span>
-       </li>
-       <li>
-        PW
-        <span>
-         Playwright
-        </span>
-       </li>
-       <li>
-        XL
-        <span>
-         Excel
-        </span>
-       </li>
-       <li>
-        BI
-        <span>
-         Power BI
-        </span>
-       </li>
-       <li>
-        RM
-        <span>
-         TOTVS
-        </span>
-       </li>
-      </ul>
-     </aside>
-    </div>
-   </section>
-   <section class="section services">
-    <div class="container">
-     <p class="eyebrow reveal">
-      05 / como posso ajudar
-     </p>
-     <h2 class="reveal">
-      Do desafio à
-      <em>
-       entrega.
-      </em>
-     </h2>
-     <div class="service-grid">
-      <article class="reveal">
-       <b>
-        01
-       </b>
-       <h3>
-        Implantação ERP
-       </h3>
-       <p>
-        Projetos estruturados, do diagnóstico à entrada em produção.
-       </p>
-      </article>
-      <article class="reveal">
-       <b>
-        02
-       </b>
-       <h3>
-        Consultoria RM
-       </h3>
-       <p>
-        Parametrização e melhorias com foco na realidade do negócio.
-       </p>
-      </article>
-      <article class="reveal">
-       <b>
-        03
-       </b>
-       <h3>
-        Automação
-       </h3>
-       <p>
-        Menos repetição, mais precisão e tempo para atividades estratégicas.
-       </p>
-      </article>
-      <article class="reveal">
-       <b>
-        04
-       </b>
-       <h3>
-        SQL
-       </h3>
-       <p>
-        Consultas, views e auditorias para transformar dados em respostas.
-       </p>
-      </article>
-      <article class="reveal">
-       <b>
-        05
-       </b>
-       <h3>
-        Integrações
-       </h3>
-       <p>
-        Sistemas conversando com segurança para uma operação sem silos.
-       </p>
-      </article>
-      <article class="reveal">
-       <b>
-        06
-       </b>
-       <h3>
-        Suporte Técnico
-       </h3>
-       <p>
-        Atendimento técnico próximo, objetivo e orientado à solução.
-       </p>
-      </article>
-     </div>
-    </div>
-   </section>
-   <section class="quote">
-    <div class="container reveal">
-     <span aria-hidden="true">
-      “
-     </span>
-     <blockquote>
-      Acredito que tecnologia deve eliminar tarefas repetitivas e permitir que as pessoas concentrem seus esforços naquilo que realmente gera valor para o negócio.
-     </blockquote>
-     <cite>
-      — Arthur Correia Nunes
-     </cite>
-    </div>
-   </section>
-   <section class="section" id="contato">
-    <div class="container contact">
-     <div>
-      <p class="eyebrow reveal">
-       06 / contato
-      </p>
-      <h2 class="reveal">
-       Vamos criar algo
-       <br/>
-       <em>
-        relevante?
-       </em>
-      </h2>
-      <p class="contact-copy reveal">
-       Estou disponível para conversar sobre sistemas, automação e os próximos desafios da sua operação.
-      </p>
-      <address class="contact-links reveal">
-       <a href="mailto:arthur.nunes31@gmail.com">
-        arthur.nunes31@gmail.com
-       </a>
-       <a href="https://www.linkedin.com/in/arthur-correia-nunes-053696191/" rel="noopener noreferrer" target="_blank">
-        LinkedIn ↗
-       </a>
-       <a href="https://tuart1.github.io/PORTFOLIO/" rel="noopener noreferrer" target="_blank">
-        Portfólio ↗
-       </a>
-      </address>
-     </div>
-     <form class="form reveal">
-      <div>
-       <label for="name">
-        Nome
-       </label>
-       <input autocomplete="name" id="name" name="name" placeholder="Como posso te chamar?" required=""/>
       </div>
-      <div>
-       <label for="email">
-        E-mail
-       </label>
-       <input autocomplete="email" id="email" name="email" placeholder="voce@empresa.com" required="" type="email"/>
+    </section>
+
+    <!-- Resultados mensuráveis -->
+    <section class="results" aria-label="Resultados profissionais"><div class="container results-grid">
+      <div><strong data-count="900" data-prefix="+">+900</strong><span>rubricas automatizadas</span></div><div><strong data-count="100" data-prefix="+">+100</strong><span>consultas SQL</span></div><div><strong data-count="20" data-prefix="+">+20</strong><span>projetos ERP</span></div><div><strong data-count="3" data-suffix="+">3+</strong><span>anos de experiência</span></div><div><strong data-count="100" data-suffix="%">100%</strong><span>comprometimento</span></div>
+    </div></section>
+
+    <!-- Experiência profissional -->
+    <section class="section experience" id="experiencia" aria-labelledby="experience-title"><div class="container experience-layout">
+      <div class="sticky-heading reveal"><p class="eyebrow">02 / experiência</p><h2 id="experience-title">Experiência que<br>conecta <em>pontas.</em></h2><p>Atuação próxima à operação, conciliando domínio técnico e visão de processo.</p></div>
+      <article class="role-card reveal"><div class="role-top"><span class="role-index">ATUAL</span><span>ERP · DADOS · AUTOMAÇÃO</span></div><h3>Assistente de TI II</h3><p>Responsável por sustentar e evoluir soluções corporativas, com foco em processos de RH, ERP e qualidade de dados.</p><ul class="responsibilities"><li>Implantação e parametrização TOTVS RM</li><li>SQL Server e consultas para auditoria</li><li>Integrações e suporte ao ERP</li><li>Portal Meu RH e obrigações do eSocial</li><li>Automações de processos com Python</li></ul></article>
+    </div></section>
+
+    <!-- Projetos com contexto de negócio -->
+    <section class="section projects" id="projetos" aria-labelledby="projects-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">03 / projetos selecionados</p><h2 id="projects-title">Problemas reais.<br><em>Soluções claras.</em></h2><p>Projetos organizados pelo desafio resolvido e pelo impacto gerado na operação.</p></div>
+      <div class="project-list">
+        <article class="project-card reveal"><div class="project-image"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=82" width="1200" height="800" loading="lazy" decoding="async" alt="Código em uma tela"><span>01</span></div><div class="project-body"><div><p class="project-label">Automação</p><h3>Automação de Rubricas eSocial</h3><ul class="tech-tags"><li>Python</li><li>Playwright</li><li>SQL</li></ul></div><dl><div><dt>Problema</dt><dd>Validação manual de centenas de rubricas após a reimplantação do ERP.</dd></div><div><dt>Solução</dt><dd>Automação com Playwright para consultar o portal do eSocial.</dd></div><div><dt>Resultado</dt><dd>Mais de 900 rubricas analisadas automaticamente, com redução de tempo e de erros humanos.</dd></div></dl></div></article>
+        <article class="project-card reverse reveal"><div class="project-image"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=82" width="1200" height="800" loading="lazy" decoding="async" alt="Profissionais colaborando em uma reunião"><span>02</span></div><div class="project-body"><div><p class="project-label">ERP</p><h3>Portal Meu RH</h3><ul class="tech-tags"><li>TOTVS RM</li><li>Portal</li><li>SQL</li></ul></div><dl><div><dt>Problema</dt><dd>Processo manual para disponibilização de documentos aos colaboradores.</dd></div><div><dt>Solução</dt><dd>Implantação do Portal Meu RH integrado ao ambiente corporativo.</dd></div><div><dt>Resultado</dt><dd>Autoatendimento e redução das solicitações direcionadas ao RH.</dd></div></dl></div></article>
+        <article class="project-card reveal"><div class="project-image"><img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&fit=crop&w=1200&q=82" width="1200" height="800" loading="lazy" decoding="async" alt="Mesa com notebook e planejamento"><span>03</span></div><div class="project-body"><div><p class="project-label">Integrações</p><h3>Integração RM × Protheus</h3><ul class="tech-tags"><li>TOTVS RM</li><li>Protheus</li><li>Layouts</li></ul></div><dl><div><dt>Problema</dt><dd>Necessidade de integração financeira entre sistemas corporativos.</dd></div><div><dt>Solução</dt><dd>Criação e manutenção de layouts para troca estruturada de dados.</dd></div><div><dt>Resultado</dt><dd>Comunicação mais segura e confiável entre os sistemas.</dd></div></dl></div></article>
+        <article class="project-card reverse reveal"><div class="project-image"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=82" width="1200" height="800" loading="lazy" decoding="async" alt="Painel com gráficos de dados"><span>04</span></div><div class="project-body"><div><p class="project-label">Dados</p><h3>Consultas SQL Estratégicas</h3><ul class="tech-tags"><li>SQL Server</li><li>Views</li><li>Procedures</li></ul></div><dl><div><dt>Problema</dt><dd>Necessidade de auditoria e consultas confiáveis para a operação.</dd></div><div><dt>Solução</dt><dd>Views, procedures e consultas otimizadas para cada necessidade.</dd></div><div><dt>Resultado</dt><dd>Mais confiabilidade dos dados e respostas mais rápidas para o negócio.</dd></div></dl></div></article>
       </div>
-      <div>
-       <label for="message">
-        Mensagem
-       </label>
-       <textarea id="message" name="message" placeholder="Conte um pouco sobre o seu desafio..." required=""></textarea>
-      </div>
-      <button class="button primary" type="submit">
-       Enviar mensagem
-       <span aria-hidden="true">
-        ↗
-       </span>
-      </button>
-      <p aria-live="polite" class="form-status">
-      </p>
-     </form>
-    </div>
-   </section>
+    </div></section>
+
+    <!-- Stack tecnológica -->
+    <section class="section stack" id="stack" aria-labelledby="stack-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow">04 / stack tecnológica</p><h2 id="stack-title">Ferramentas para<br>fazer <em>acontecer.</em></h2><p>Um repertório técnico conectado às necessidades da operação e à evolução contínua.</p></div>
+      <div class="stack-board reveal"><article><h3>ERP</h3><p>TOTVS RM · Labore · Meu RH · eSocial</p></article><article><h3>Banco de Dados</h3><p>SQL Server · T-SQL · Views · Procedures</p></article><article><h3>Automação</h3><p>Python · Playwright · PowerShell</p></article><article><h3>Front-end</h3><p>HTML · CSS · JavaScript · React Native</p></article><article><h3>Ferramentas</h3><p>Git · GitHub · Excel · Power BI</p></article></div>
+    </div></section>
+
+    <!-- Espaço preparado para repositórios -->
+    <section class="github-section" aria-labelledby="github-title"><div class="container github-box reveal"><div><p class="eyebrow">05 / github</p><h2 id="github-title">Código que<br>continua <em>evoluindo.</em></h2><p>Uma vitrine preparada para reunir experimentos, automações e soluções de código aberto.</p><a class="button primary" href="https://github.com/tuart1" target="_blank" rel="noopener noreferrer">Ver todos os projetos <span aria-hidden="true">↗</span></a></div><div class="repo-preview" aria-label="Prévia de repositórios"><article><span>public</span><h3>automacoes-processos</h3><p>Python · Playwright</p><i></i></article><article><span>public</span><h3>sql-utilities</h3><p>T-SQL · SQL Server</p><i></i></article><article><span>public</span><h3>portfolio</h3><p>HTML · CSS · JavaScript</p><i></i></article></div></div></section>
+
+    <!-- Diferenciais -->
+    <section class="section value" aria-labelledby="value-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow">06 / como gero valor</p><h2 id="value-title">Menos atrito.<br>Mais <em>resultado.</em></h2></div><div class="value-grid"><article class="reveal"><span>↘</span><h3>Redução de tarefas repetitivas</h3></article><article class="reveal"><span>↘</span><h3>Implantação de ERP</h3></article><article class="reveal"><span>↘</span><h3>Automação de processos</h3></article><article class="reveal"><span>↘</span><h3>Integração entre sistemas</h3></article><article class="reveal"><span>↘</span><h3>Análise de dados</h3></article></div></div></section>
+
+    <!-- Chamada para contato -->
+    <section class="cta" id="contato" aria-labelledby="contact-title"><div class="container reveal"><p class="eyebrow">07 / vamos conversar</p><h2 id="contact-title">Vamos construir a<br>próxima <em>solução?</em></h2><p>Estou disponível para oportunidades como Analista de Sistemas, Consultor ERP, Especialista TOTVS RM, Desenvolvedor Python e Analista de Automação.</p><div class="actions"><a class="button light-button" href="mailto:arthur.nunes31@gmail.com">Entrar em contato <span aria-hidden="true">↗</span></a><a class="cta-link" href="https://www.linkedin.com/in/arthur-correia-nunes-053696191/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a></div></div></section>
   </main>
-  <footer>
-   <div class="container footer">
-    <a class="brand" href="#inicio">
-     Arthur
-     <span>
-      .
-     </span>
-    </a>
-    <p>
-     © 2026 Arthur Correia Nunes. Todos os direitos reservados.
-    </p>
-    <a href="#inicio">
-     voltar ao topo ↑
-    </a>
-   </div>
-  </footer>
-  <button aria-label="Voltar ao topo" class="back-top">
-   ↑
-  </button>
-  <script defer="" src="script.js">
-  </script>
- </body>
+
+  <!-- Rodapé -->
+  <footer><div class="container footer"><a class="brand" href="#inicio">Arthur<span>.</span></a><p>© 2026 Arthur Correia Nunes. Todos os direitos reservados.</p><a href="#inicio">voltar ao topo ↑</a></div></footer>
+  <button class="back-top" aria-label="Voltar ao topo">↑</button>
+  <script src="script.js" defer></script>
+</body>
 </html>
